@@ -35,11 +35,24 @@ class NotificationManager{
         
         //time
         let trigger = UNTimeIntervalNotificationTrigger(
-            timeInterval: 5.0,
+            timeInterval: 2.0,
             repeats: false)
+        
+        
         //calendar
+//        var dateComponents = DateComponents()
+//        dateComponents.hour = 00
+//        dateComponents.minute = 28
+//        
+//        let trigger = UNCalendarNotificationTrigger(
+//            dateMatching: dateComponents,
+//            repeats: true)
+        
         //location
         
+        
+            
+            
         let request = UNNotificationRequest(
             identifier: UUID().uuidString,
             content: content,
@@ -61,6 +74,11 @@ struct LocalNotifications: View {
                 NotificationManager.instance.scheduleNotification()            }
         }
         .padding()
+        .onAppear{
+            UIApplication.shared.applicationIconBadgeNumber = 0
+            
+            
+        }
     }
 }
 

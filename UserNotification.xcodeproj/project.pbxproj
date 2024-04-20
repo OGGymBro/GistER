@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		AF772FB82BD41D2900CF93CB /* UserNotificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF772FB72BD41D2900CF93CB /* UserNotificationApp.swift */; };
-		AF772FBA2BD41D2900CF93CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF772FB92BD41D2900CF93CB /* ContentView.swift */; };
+		AF772FBA2BD41D2900CF93CB /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF772FB92BD41D2900CF93CB /* LocalNotifications.swift */; };
 		AF772FBC2BD41D2A00CF93CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF772FBB2BD41D2A00CF93CB /* Assets.xcassets */; };
 		AF772FBF2BD41D2A00CF93CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF772FBE2BD41D2A00CF93CB /* Preview Assets.xcassets */; };
+		AF772FC62BD4286900CF93CB /* SoundsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF772FC52BD4286900CF93CB /* SoundsBootcamp.swift */; };
+		AF772FC92BD42EB300CF93CB /* door.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF772FC72BD42EB300CF93CB /* door.mp3 */; };
+		AF772FCA2BD42EB300CF93CB /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF772FC82BD42EB300CF93CB /* tada.mp3 */; };
+		AF772FCD2BD4314500CF93CB /* HapticsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF772FCC2BD4314500CF93CB /* HapticsBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF772FB42BD41D2900CF93CB /* UserNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF772FB72BD41D2900CF93CB /* UserNotificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationApp.swift; sourceTree = "<group>"; };
-		AF772FB92BD41D2900CF93CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF772FB92BD41D2900CF93CB /* LocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotifications.swift; sourceTree = "<group>"; };
 		AF772FBB2BD41D2A00CF93CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF772FBE2BD41D2A00CF93CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF772FC52BD4286900CF93CB /* SoundsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsBootcamp.swift; sourceTree = "<group>"; };
+		AF772FC72BD42EB300CF93CB /* door.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = door.mp3; sourceTree = "<group>"; };
+		AF772FC82BD42EB300CF93CB /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
+		AF772FCC2BD4314500CF93CB /* HapticsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				AF772FB72BD41D2900CF93CB /* UserNotificationApp.swift */,
-				AF772FB92BD41D2900CF93CB /* ContentView.swift */,
+				AF772FB92BD41D2900CF93CB /* LocalNotifications.swift */,
+				AF772FCC2BD4314500CF93CB /* HapticsBootcamp.swift */,
+				AF772FC52BD4286900CF93CB /* SoundsBootcamp.swift */,
+				AF772FCB2BD42EEA00CF93CB /* Sounds */,
 				AF772FBB2BD41D2A00CF93CB /* Assets.xcassets */,
 				AF772FBD2BD41D2A00CF93CB /* Preview Content */,
 			);
@@ -65,6 +76,15 @@
 				AF772FBE2BD41D2A00CF93CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF772FCB2BD42EEA00CF93CB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				AF772FC72BD42EB300CF93CB /* door.mp3 */,
+				AF772FC82BD42EB300CF93CB /* tada.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +145,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF772FCA2BD42EB300CF93CB /* tada.mp3 in Resources */,
 				AF772FBF2BD41D2A00CF93CB /* Preview Assets.xcassets in Resources */,
 				AF772FBC2BD41D2A00CF93CB /* Assets.xcassets in Resources */,
+				AF772FC92BD42EB300CF93CB /* door.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF772FBA2BD41D2900CF93CB /* ContentView.swift in Sources */,
+				AF772FC62BD4286900CF93CB /* SoundsBootcamp.swift in Sources */,
+				AF772FCD2BD4314500CF93CB /* HapticsBootcamp.swift in Sources */,
+				AF772FBA2BD41D2900CF93CB /* LocalNotifications.swift in Sources */,
 				AF772FB82BD41D2900CF93CB /* UserNotificationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +304,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +334,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
